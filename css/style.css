@@ -1,0 +1,68 @@
+body {
+  color: rgb(65,75,86);
+  font-family: arial;
+  margin: 0px;
+}
+div {
+  min-height: 100vh; /*view port height*/
+  width: 100vw; /*view port width*/
+  /*gives space this big between each div*/
+}
+h1, h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 5em; /**/
+}
+h2 {
+  font-size: 2.5em;/*https://www.sitepoint.com/power-em-units-css/*/
+}
+img {
+  display: flex; /*centering things*/
+  padding: 20px;
+  margin: 0 auto;/*0 is the top and bottom margin and auto is the right and left margin*/
+  border-radius: 130px;
+}
+p {
+  width: 40%;
+  margin: 10vh 10vw;
+  font-size: 2em;
+}
+a {
+  color: rgb(0,0,0);
+}
+ol {
+  list-style: none; /*remove the numbering*/
+  padding: 0;
+  margin-bottom: 10%;
+  font-size: 3em;
+  justify-content: space-evenly;
+  display: flex;
+}
+li#lower { /*looking for lower id*/
+  margin-top: 7%;
+}
+li#lowest {
+    margin-bottom: 14%;
+}
+div.contrast { /*looking for contrast class*/
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*eventhing in this div will arranged in coloumn*/
+}
+/*.item {} li.item{}, ul .item{}, ul li.item{}. ul li.item is the most specifics. if you write .item and ul li.item than they will go for the most specifics one*/
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 0 20px;
+  transition: 0.6s ease; /*we put here as well with the one in li:hover so that when the mouse move from the object it will go back easily without sudden transition*/
+}
+li:hover {/*hover: https://www.w3schools.com/cssref/sel_hover.asp*/
+  font-size: 1.2em;
+  transition: 0.6s ease;
+}
